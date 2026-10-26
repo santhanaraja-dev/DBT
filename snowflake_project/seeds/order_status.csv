@@ -1,0 +1,11 @@
+status_code,status_name
+P,Pending
+A,Approved
+RT,Returned
+R,Rejected
+S,shipped
+C,cancelled
+D,Delivered
+H,On Hold
+F,Failed
+I,In Progress
