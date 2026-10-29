@@ -7,6 +7,7 @@ models:
     columns:
       - name: id
         description: "The primary key for this table"
+        # only 4 built in tests unique, not null , accepted_values , (relationships : to : sourcename field : column name)
         data_tests:
           - unique
           - not_null

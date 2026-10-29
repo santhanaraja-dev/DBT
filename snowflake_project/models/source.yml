@@ -14,8 +14,12 @@ sources:
         description: "It contains employee-test info"
         columns:
           - name: id
-            tests:
+          # only 4 built in tests unique, not null , accepted_values , (relationships : to : sourcename field : column name)
+            tests:   
               - unique
+          - name: salary
+            tests:
+              - check_salary    #custom generic test
         config:
           loaded_at_field : LOAD_TIMESTAMP
 
@@ -39,3 +43,10 @@ sources:
 
       - name: CUSTOMER_RAW
         description: "It contains customer-raw info"
+
+      - name: EMPLOYEE_INCREMENTAL
+        description: "It contains EMPLOYEE_INCREMENTAL example data"
+        columns:
+          - name: EMP_ID
+            tests:
+              - unique
