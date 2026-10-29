@@ -23,7 +23,7 @@ sources:
             warn_after:
               count: 1
               period: hour
-              
+
             error_after:
               count: 2
               period: hour
@@ -32,6 +32,8 @@ sources:
       - name: EMPLOYEES
         description: "It contains employee info"
 
+      - name: EMP
+        description: "It contains employee info"
       - name: CUSTOMERS
         description: "It contains customers info"
 
